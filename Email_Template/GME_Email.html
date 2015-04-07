@@ -1,0 +1,472 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1">
+<title>Untitled Document</title>
+<style>
+*{
+	margin:0;
+	padding:0;
+}
+
+* img{
+	vertical-align:bottom;
+}
+
+div{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	font-family:"Optima", Arial, sans-serif;
+	/*border-style:dotted;
+	border-width:1px;
+	border-color:#000000;*/
+}
+
+#wrapper{
+	min-height:auto;
+	max-width:640px;	
+}
+#banner{
+	max-height:390px;
+}
+
+#banner img{
+	width:100%;
+}
+
+div[id=title]{
+	min-height:125px;
+	background-color:#0077C1;
+	color:#ffffff;
+	padding-top:15px;
+	font-size:60px;
+	text-align:center;
+}
+
+div[id=subtitle]{
+	min-height:95px;
+	text-align:center;
+	background-color:#FFFFFF;
+	padding-top:15px;
+}
+
+div[id=subtitle] h2[id=left]{
+	font-size:36px;
+	color:#6B6B6B;
+	font-weight:normal;
+}
+
+div[id=subtitle] h2[id=right]{
+	font-size:36px;
+	color:#6B6B6B;
+	font-weight:normal;
+}
+
+div[id=sponser-title]{
+	min-height:35px;
+	text-align:center;
+	font-size:24px;
+	color:#0077C1;
+	background-color:#FFFFFF;
+	padding-top:15px;
+}
+
+div[id=sponsor-logos]{
+	background-color:#FFFFFF;
+	width:100%;
+}
+
+div[id=sponsor-logos] img[id="sponsor-logos-image"]{
+	width:70%;
+	padding-left:15%;
+	padding-right:15%;
+}
+
+div[id=content-title]{
+	min-height:205px;
+	font-size:42px;
+	color:#0077C1;
+	background-color:#FFFFFF;
+	padding-top:50px;
+	padding-bottom:50px;
+	padding-left:5%;
+	padding-right:15%;
+	width:80%;
+}
+
+div[id=content-body]{
+	min-height:400px;
+	font-size:24px;
+	background-color:#FFFFFF;
+	padding-left:5%;
+	padding-right:15%;
+	width:80%;
+}
+
+#content-body p{
+	line-min-height:1.3em;
+	margin-bottom:15px;
+}
+
+div[id=more-information]{
+	min-height:260px;
+	font-size:36px;
+	background-color:#FFFFFF;
+}
+
+div[id=more-information] div[id=more-information-background]{
+		background-color:#E2DDD9;
+		width:100%;
+		max-width:455px;
+		min-height:85px;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:75px;
+		position:relative;
+		
+}
+
+div[id=more-information] a[id=more-information-link]{
+		color:#FFFFFF;
+		text-decoration:none;
+		background-color:#0077C1;
+		width:98%;
+		max-width:445px;
+		min-width:390px;
+		min-height:55px;
+		position:absolute;
+		margin-left:3px;
+		margin-top:3px;
+		text-align:center;
+		padding-top:20px;
+}
+
+div[id=social-media]{
+	min-height:100px;
+	text-align:center;
+	font-size:30px;
+	color:#0077C1;
+	padding-top:25px;
+}
+
+div[id=social-media] img[id=smi-1]{
+	float:left;
+	margin-right:25px;
+}
+
+div[id=social-media] img[id=smi-2]{
+	float:left;
+	margin-right:25px;
+}
+
+div[id=social-media] img[id=smi-3]{
+	float:left;
+	margin-right:25px;
+}
+
+div[id=social-media] img[id=smi-4]{
+	float:left;
+	margin-right:25px;
+}
+
+#social-media img:first-child{
+	margin-left:0px;
+}
+
+#social-media img:last-child{
+	margin-right:0px;
+}
+
+div[id=social-images]{
+	width:275px;
+}
+
+div[id=location]{
+	min-height:125px;
+	font-size:24px;
+	
+}
+
+#location-title{
+	font-weight:bold;
+}
+
+
+#location #location-title, #location #street, #location #city, #location img{
+	float:left;
+	width:auto;
+}
+
+div[id=location-info]{
+	width:300px;
+	min-height:auto;
+	float:left;
+	margin-top:30px;
+}
+div[id=location] img[id=location-image]{
+		margin-top:30px;
+	}
+#location-block{
+	width:375px;
+	height:auto;
+	overflow:auto;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+div[id=unsubscribe]{
+	min-height:45px;
+	text-align:center;
+	padding-top:35px;
+	color:#CCCCCC;
+}
+
+#unsubscribe a{
+	text-decoration:none;
+	color:#0077C1;
+}
+
+@media screen and (min-width: 480px) {
+    div[id=wrapper] {
+        max-width:600px;
+    }
+	
+	div[id=banner]{
+		float:left;
+		/*width:235px;*/
+		width:39.16%;
+		height:144px;
+	}
+	
+	div[id=banner] img[id=banner-image]{
+		height:100%;
+	}
+	
+	div[id=title]{
+		float:left;
+		/*width:365px;*/
+		width:60.83%;
+		height:114px;
+		min-height:114px;
+		padding:0;
+		padding-top:30px;
+		font-size:2.5em;
+	}
+	<!--FIX EVERYTHIUNG ABOUT AT THIS SPOT RIGHT HERE-->
+	div[id=subtitle]{
+		min-height:65px;
+		padding-top:0;
+		float:left;	
+	}
+	
+	div[id=subtitle] h2[id=left]{
+		width:35%;
+		margin-left:5%;
+		
+		float:left;
+		font-size:18px;
+		margin-top:25px;
+	}
+	
+	div[id=subtitle] h2[id=right]{
+		width:50%;
+		margin-right:10%;
+		
+		float:left;
+		font-size:18px;
+		margin-top:25px;
+	}
+	
+	div[id=sponser-title]{
+		font-size:14px;
+		float:left;
+		width:35%;
+		padding-left:10%;	
+	}
+	
+	div[id=sponsor-logos]{
+		float:left;
+		width:50%;
+	}
+	
+	div[id=sponsor-logos] img[id="sponsor-logos-image"]{
+		width:90%;
+		padding-right:10%;
+		padding-left:0;	
+	}
+	
+	div[id=content-title]{
+		min-height: 25px;
+		font-size: 29px;
+		color: #0077C1;
+		background-color: #FFFFFF;
+		padding-top: 25px;
+		/* padding-bottom: 50px; */
+		padding-left: 2.5%;
+		padding-right: 2.5%;
+		width: 95%;
+		float: left;	
+	}
+	
+	div[id=content-body]{
+		font-size:18px;
+		float:left;
+		padding-left:2.5%;
+		padding-right:2.5%;
+		width:95%;
+		min-height:201px;
+	}
+	
+	div[id=more-information] div[id=more-information-background] {
+		max-width: 400px;
+		min-width: 260px;
+		min-height: 60px;
+		width:41%;
+		margin-top:25px;	
+	}
+	
+	div[id=more-information] a[id=more-information-link] {
+		max-width: 257px;
+		min-height: 39px;
+		min-width:250px;
+		padding-top:15px;
+		font-size:22px;
+	}
+	
+	div[id=more-information]{
+		float:left;
+		min-height:100px;
+	}
+	
+	div[id=social-media]{
+		float:left;
+		font-size:18px;
+		width:50%;
+		float:right;
+		text-align:right;
+	}
+	
+	div[id=social-media] img[id=smi-1]{
+		width:30px;
+		margin-right:18px;
+	}
+	
+	div[id=social-media] img[id=smi-2]{
+		width:30px;
+		margin-right:18px;
+	}
+	
+	div[id=social-media] img[id=smi-3]{
+		width:30px;
+		margin-right:18px;
+	}
+	
+	div[id=social-media] img[id=smi-4]{
+		width:30px;
+		margin-right:0;
+	}
+	
+	div[id=social-images]{
+		overflow:auto;
+		width:180px;	
+		float:right;
+	}
+	
+	div[id=location]{
+		float:left;
+		font-size:14px;
+		width:50%;
+	}
+	
+	div[id=location-info]{
+		margin-top:25px;
+	}
+	
+	div[id=location] img[id=location-image]{
+		float:left;
+		margin-top:22px;
+		width:50px;
+	}
+	
+	div[id=street]{
+		clear:left;	
+	}
+	
+	div[id=city]{
+		clear:left;
+	}
+	div[id=unsubscribe]{
+		float:left;
+		font-size:12px;
+	}
+</style>
+</head>
+
+<body>
+
+	<div id="wrapper">
+	<div id="banner"><img id="banner-image" src="images/email-header_01.png"/></div>
+    <div id="title">
+    	<p>Mood Disorders</p>
+        <p>Summit</p>
+        </div><!--End of Title-->
+        
+    <div id="subtitle">
+    	<h2 id="left">December 11-12, 2015</h2>
+        <h2 id="right">The Biltmore Hotel, Coral Gables, FL</h2>
+        </div><!--End of Subtitle-->
+        
+    <div id="sponser-title">
+    	<p>Jointly Sponsored/Co-Provided By:</p>
+        </div><!--End of Sponsor Title-->
+        
+    <div id="sponsor-logos"><img id="sponsor-logos-image" src="images/email-logo-600_03.png"/></div>
+    
+    <div id="content-title">
+    	This copy is not intended to be read. This copy isn't inteded to be read.
+    </div><!--End of Content Title-->
+    
+    <div id="content-body">
+    	<p>It is merely a representation of what the text of this piece may
+        look like set in this type size and style. The criteria for quality 
+        typography have not changed with the application of 
+        comptuters and state of the art technology.</p>
+        
+        <p>Legibility, image clarity, consistent letter and word spacing,
+        character design and layout remain the basic qualitites by
+        which we judge typography. This copy is not intended to be 
+        read. It is merely a representation of what the text of this
+		type size and style. The criteria for quality typography have
+        not changed with the application of computers and state of
+        the art technology. Legibility, image clarity, consistent letter
+        and word spacing, character design and layout.</p>
+    </div>
+    <div id="more-information"><div id="more-information-background"><a id="more-information-link" href="">Get More Information >></a></div></div>
+    <div id="social-media">
+    
+    	<p>CONNECT WITH GME</p>
+        <div id="social-images">
+        <img id="smi-1" src="images/facebook_03.png"/>
+        <img id="smi-2" src="images/twitter_05.png"/>
+        <img id="smi-3" src="images/google_07.png"/>
+        <img id="smi-4" src="images/pinterest_09.png"/>
+        </div><!--End of Social Images-->
+    
+    </div>
+    <div id="location">
+    	<div id="location-block">
+    	<img id="location-image" src="images/gme-footer-image_05.png"/>
+    	
+        <div id="location-info">
+            <div id="location-title">Global Medical Education</div>
+            <div id="street">26 East 63rd Street</div>
+            <div id="city">New York, NY 10065</div>
+       </div>
+       </div><!--End of Location Block-->
+    </div>
+    <div id="unsubscribe"><p>To unsubscribe, please <a href="">Click Here</a></p></div>
+  </div><!--End of Wrapper-->
+</body>
+</html>
